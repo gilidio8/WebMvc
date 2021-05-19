@@ -15,9 +15,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Sobre()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Aplicação Web Mvc com C# ";
+            ViewData["criador"] = "Gabriel Ilidio";
+
 
             return View();
         }
@@ -35,6 +37,7 @@ namespace WebApplication1.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
