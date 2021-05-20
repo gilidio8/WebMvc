@@ -13,4 +13,11 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Services\Controllers\" />
+    <Folder Include="Areas\Services\Data\" />
+    <Folder Include="Areas\Services\Models\" />
+    <Folder Include="Areas\Services\Views\" />
+  </ItemGroup>
+
 </Project>
